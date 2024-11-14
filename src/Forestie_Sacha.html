@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <title>sforesti</title>
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+        <select id="languageSwitcher" onchange="setLanguage(this.value)">
+            <option value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
+        <div class="modal" id="modal">
+            <div class="modal__container">
+                <img class="modal__close" src="../images/close.png" id="closeModal">
+                <img class="modal__controlButton--previous" src="../images/previous.png" id="previousModal">
+                <div class="modal__img--container">
+                    <img id="modalContent" class="modal__img" src="">
+                </div>
+                <img class="modal__controlButton--next" src="../images/next.png" id="nextModal">
+            </div>
+        </div>
+        <header>
+            <div>
+                <p class="header__title">Forestié Sacha</p>
+                <p class="header__subtitle" data-translate="profession">Developpeur Fullstack Junior</p>
+                <p class="header__presentation"  data-translate="headerPresentation">
+                    Passionné par l’informatique depuis tout petit, je me suis naturellement tourné vers le développement. En intégrant l'école 42, j’ai pu approfondir mes connaissances à travers divers projets. Je suis maintenant prêt pour investir mes connaissances dans le monde actif.
+                </p>
+            </div>
+            <div>
+                <img class="header__img" src="https://drive.google.com/thumbnail?id=1Imec4-HkCViksqLrQJa-pjeAJmpw83Ie&sz=w1000" alt="me">
+            </div>
+        </header>
+        <section class="skills">
+            <div class="card">
+                <div class="card--underline">
+                    <p class="card__p--title body__p--center " data-translate="cardFormationTitle">Formations</p>
+                </div>
+                <p class="card__h5 body__p--center">
+                    2019 - 2021
+                </p>
+                <p class="card__h6 body__p--center" data-translate="cardFormationSchool1">
+                    Lycée Clément Marot | Cahors
+                </p>
+                <p class="body__p--center" data-translate="cardFormationDiploma1">
+                    Baccalauréat Sciences Économiques et sociales, Numérique et sciences informatique
+                </p>
+                <p class="card__h5 body__p--center" data-translate="cardFormationDate1">
+                    2022 - actuellement
+                </p>
+                <p class="card__h6 body__p--center" data-translate="cardFormationSchool2">
+                    Ecole 42 | Nice
+                </p>
+                <p class="body__p--center" data-translate="cardFormationDiploma2">
+                    Architecte en Technologies du Numérique
+                </p>
+            </div>
+            <div class="card">
+                <div class="card--underline">
+                    <p class="card__p--title body__p--center " data-translate="cardSkillTitle">Compétences</p>
+                </div>
+                <p class="card__h6 body__p--center" data-translate="cardSkillSubtitle1">Informatique</p>
+                <ul class="">
+                    <li>C / C++</li>
+                    <li>Docker</li>
+                    <li>HTML / CSS / JS</li>
+                    <li>Svelte</li>
+                    <li>Linux</li>
+                    <li>Visual Studio Code</li>
+                    <li>Github</li>
+                    <li>Bootstrap</li>
+                    <li>Typescript</li>
+                </ul>
+                <p class="card__h6 body__p--center" data-translate="cardSkillSubtitle2">Linguistique</p>
+                <ul>
+                    <li data-translate="cardSkillLi1">Francais (natif)</li>
+                    <li data-translate="cardSkillLi2">Anglais (B1)</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card--underline">
+                    <p class="card__p--title body__p--center" data-translate="cardAboutTitle">A propos de moi</p>
+                </div>
+                <p class="card__h6 body__p--center" data-translate="cardAboutSubtitle1">Qualité</p>
+                <ul>
+                    <li data-translate="cardAboutLi1">Motivé</li>
+                    <li data-translate="cardAboutLi2">Sociable</li>
+                    <li data-translate="cardAboutLi3">Rigoureux</li>
+                    <li data-translate="cardAboutLi4">Autonome</li>
+                </ul>
+                <p class="card__h6 body__p--center" data-translate="cardAboutSubtitle2">Hobbies</p>
+                <ul>
+                    <li data-translate="cardAboutLi5">Parapente</li>
+                    <li data-translate="cardAboutLi6">Cuisine</li>
+                </ul>
+                <p class="card__h6 body__p--center" data-translate="cardAboutSubtitle3">Réseaux</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/sacha-forestie-0aaa3924a/" target="_blank" >Linkedin</a></li>
+                    <li><a href="https://github.com/Stelviaa" target="_blank">Github</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="">
+            <p class="body__p--center projects__p--title" data-translate="sectionProjectsTitle">Mes projets</p>
+            <div class="projects">
+                <div class="card__container">
+                    <div class="card projects__card" onclick="launchAnimation(event, this)">
+                        <div class="card__side card__side--front front__card">
+                            <div class="card--underline d-flex">
+                                <div class="card__p--title body__p--center" data-translate="projectsCard1Title">
+                                    Minishell
+                                </div>
+                                <img class="card__footer--groupimg" src="../images/group.png" title="Group project">
+                            </div>
+                            <div>
+                                <p class="body__p--center" data-translate="projectsCard1Description">Reproduction d'un terminal bash, incluant redirections, pipes, built-ins, exécution de binaire, et signaux.</p>
+                            </div>
+                            <div class="card__footer card--topline">
+                                <a href="https://github.com/Stelviaa/Minishell" target="_blank" class="card__footer--start" onclick="myStopPropagation(event)">
+                                    <img class="card__footer--img" src="https://drive.google.com/thumbnail?id=1k94TpxsTg9vKsncCdm2OWFR5nnObLU0y&sz=w1000">
+                                </a>
+                                <img class="card__footer--img card__footer--end" src="https://drive.google.com/thumbnail?id=1Tnan-mBKBhvWB5XLOi9diJkosArtb3eH&sz=w1000">
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back back__card">
+                            <div class="card__back--container">
+                                <img src="../images/Minishell1.PNG" class="card__back--img" onclick="openImg(event, this)" name="Minishell">
+                                <img src="../images/Minishell2.PNG" class="card__back--img" onclick="openImg(event, this)" name="Minishell">
+                                <img src="../images/Minishell3.PNG" class="card__back--img" onclick="openImg(event, this)" name="Minishell">
+                                <img src="../images/Minishell4.PNG" class="card__back--img" onclick="openImg(event, this)" name="Minishell">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card projects__card" onclick="launchAnimation(event, this)">
+                        <div class="card__side card__side--front front__card">
+                            <div class="card--underline d-flex">
+                                <div class="card__p--title body__p--center" data-translate="projectsCard2Title">
+                                    Ft_irc
+                                </div>
+                                <img class="card__footer--groupimg" src="../images/group.png" title="Group project">
+                            </div>
+                            <div class="">
+                                <p class="body__p--center" data-translate="projectsCard2Description">Reproduction d'un serveur irc. Ou les operations entrées/sorties doivent être non bloquantes.</p>
+                            </div>
+                            <div class="card__footer card--topline">
+                                <a href="https://github.com/Stelviaa/ft_irc" target="_blank" onclick="myStopPropagation(event)" class="card__footer--start"><img class="card__footer--img" src="https://drive.google.com/thumbnail?id=1k94TpxsTg9vKsncCdm2OWFR5nnObLU0y&sz=w1000"></a>
+                                <img id="cppImg" class="card__footer--img card__footer--end" src="https://drive.google.com/thumbnail?id=1ZkQUaCKydZJAUQ5rGuE9qeFXu5PqPPIp&sz=w1000">
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back back__card">
+                            <div class="card__back--container">
+                                <img src="../images/irc1.PNG" class="card__back--img" onclick="openImg(event, this)" name="irc">
+                                <img src="../images/irc2.PNG" class="card__back--img" onclick="openImg(event, this)" name="irc">
+                                <img src="../images/irc3.PNG" class="card__back--img" onclick="openImg(event, this)" name="irc">
+                                <img src="../images/irc4.PNG" class="card__back--img" onclick="openImg(event, this)" name="irc">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card projects__card">
+                        <div class="card--underline">
+                            <div class="card__p--title body__p--center" data-translate="projectsCard3Title">
+                                Inception
+                            </div>
+                        </div>
+                        <div>
+                            <p class="body__p--center" data-translate="projectsCard3Description">Initiation a docker, et docker-compose. Le but etait de faire marcher trois containeurs ensembles, nginx, mariaDB, wordpress.</p>
+                        </div>
+                        <div class="card__footer card--topline">
+                            <a href="https://github.com/Stelviaa/Inception" onclick="myStopPropagation(event)" target="_blank" class="card__footer--start"><img class="card__footer--img" src="https://drive.google.com/thumbnail?id=1k94TpxsTg9vKsncCdm2OWFR5nnObLU0y&sz=w1000"></a>
+                            <img class="card__footer--img card__footer--end" src="https://drive.google.com/thumbnail?id=1KvxNTfXd8p5roZLbvDRkppAsOozQ849T&sz=w1000">
+                        </div>
+                    </div>
+                </div>
+                <div class="card__container">
+                    <div class="card projects__card" onclick="launchAnimation(event, this)">
+                        <div class="card__side card__side--front front__card">
+                            <div class="card--underline d-flex">
+                                <div class="card__p--title body__p--center" data-translate="projectsCard4Title">
+                                    Transcendence
+                                </div>
+                                <img class="card__footer--groupimg" src="../images/group.png" title="Group project">
+                            </div>
+                            <div>
+                                <p class="body__p--center" data-translate="projectsCard4Description">Creation d'un site internet, en single-page application. Multijoueur en temps reel, chat, database, et gestion d'utilisateurs.</p>
+                            </div>
+                            <div class="card__footer card--topline">
+                                <a href="https://github.com/LuxoJr22/transcendence" target="_blank" class="card__footer--start"  onclick="myStopPropagation(event)"><img class="card__footer--img" src="https://drive.google.com/thumbnail?id=1k94TpxsTg9vKsncCdm2OWFR5nnObLU0y&sz=w1000"></a>
+                                <div>
+                                    <img class="card__footer--end card__footer--img" src="https://drive.google.com/thumbnail?id=1hhImdiTj1BxSytzmgpCJvS_RYUNTrF_f&sz=w1000">
+                                    <img class="card__footer--end card__footer--img" src="https://drive.google.com/thumbnail?id=1Fz7iD7FoMHgNssdzmV1_wbZmZUQRS5H4&sz=w1000">
+                                    <img class="card__footer--end card__footer--img" src="https://drive.google.com/thumbnail?id=1jV4pXeXf6dJ8m58wa56UaUFgBh9t2odg&sz=w1000">
+                                    <img class="card__footer--end card__footer--img" src="https://drive.google.com/thumbnail?id=1KvxNTfXd8p5roZLbvDRkppAsOozQ849T&sz=w1000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__side card__side--back back__card">
+                            <div class="card__back--container">
+                                <img src="../images/transcendence1.png" class="card__back--img" onclick="openImg(event, this)" name="transcendence">
+                                <img src="../images/transcendence2.png" class="card__back--img" onclick="openImg(event, this)" name="transcendence">
+                                <img src="../images/transcendence3.png" class="card__back--img" onclick="openImg(event, this)" name="transcendence">
+                                <img src="../images/transcendence4.png" class="card__back--img" onclick="openImg(event, this)" name="transcendence">
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+  </body>
+</html>
+
+<script src="script.js"></script>

@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat' , 'sans-serif' ;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border: solid 3px;
+    background-color: #FFFEEB;
+}
+
+.header__title {
+    margin: 10px 0px 10px 20px;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.header__subtitle {
+    margin: -10px 0px 0px 80px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.header__img {
+    object-fit: cover;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    width: 95%;
+}
+
+.header__presentation {
+    margin: 10px 10px 10px 20px;
+    font-style: italic;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 33% 32% 33%;
+    margin-top : 20px;
+    width: 100%;
+    gap: 8px;
+}
+
+.card {
+    border : solid 2px;
+    background-color: #FFFEEB;
+    border-radius: 5px;
+}
+
+.card__p--title{
+    margin: 10px 0 10px 0;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.card__h5{
+    margin: 10px 0 0 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card__h6{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.body__p--center{
+    text-align: center;
+}
+
+.card--underline {
+    border-bottom: solid 1px;
+}
+
+.card--topline {
+    border-top: solid 1px;
+}
+
+.card__footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.card__footer--end {
+    justify-self: end;
+}
+
+.card__footer--start {
+    justify-self: start;
+}
+
+.card__footer--img {
+    width: 15%;
+    margin: 5px 5px 0 5px;
+}
+
+.card__footer--groupimg {
+    width: 10%;
+    height: 10%;
+    margin: 7px 5px 0 5px;
+    color: black;
+}
+
+.projects__p--title {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 5px 0 20px 0;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top : 20px;
+    width: 100%;
+    gap: 8px;
+}
+
+.card__back--container {
+    display: grid;
+    width: 90%;
+    height: 80%;
+    grid-template-columns: 50% 50%;
+    margin : 13px 20px 15px 20px;
+    gap: 4px;
+}
+
+.card__container{
+    perspective: 1000px;
+}
+
+.projects__card {
+    width: 375px;
+    height: 180px;
+    transform-style: preserve-3d;
+}
+
+.card__side--front:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.card__back--img {
+    width: 165px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card__back--img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.card__side {
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card__side--back {
+    transform: rotateX(180deg);
+    display: none;
+}
+
+.card__img--group {
+    width: 25px;
+}
+
+.modal {
+    display:none;
+    margin: auto;
+    width:100%;
+    height:100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+    flex-direction: column;
+}
+
+.modal__container{
+    width: 80%;
+    height: 80%;
+    border-radius: 5px;
+    display: grid;
+    padding: 50px;
+}
+
+.modal__img--container {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.modal__close {
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+}
+
+.modal__img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.modal__controlButton {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+.modal__controlButton--previous, .modal__controlButton--next {
+    cursor: pointer;
+    aspect-ratio: 1;
+    object-fit: scale-down;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    position:absolute;
+    
+}
+
+.modal__controlButton--previous {
+    top:50%;
+    left:2%;
+}
+
+.modal__controlButton--next {
+    top:50%;
+    right:2%;
+}
+
+.modal__controlButton--previous:hover, .modal__controlButton--next:hover {
+    opacity: 0.6;
+}
+
+@keyframes verso-card{
+    100% {
+        transform: rotateX(180deg);
+    }
+}
+
+@keyframes recto-card{
+    0% {
+        transform: rotateX(180deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+#cppImg {
+    width: 13%;
+    margin: 5px 5px 0 5px;
+}
+
+#languageSwitcher {
+    font-family: 'Montserrat';
+    display: flex;
+    justify-self: end;
+    margin: 1px;
+    border-radius: 4px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+}
