@@ -5,7 +5,7 @@ const translations = {
         cardFormationTitle: "Formations",
         cardFormationSchool1: "Lycée Clément Marot | Cahors",
         cardFormationSchool2: "École 42 | Nice",
-        cardFormationDiploma1: "Baccalauréat Sciences Économiques et Sociales, Numérique et Sciences Informatique",
+        cardFormationDiploma1: "Baccalauréat Sciences Économiques et Sociales, Numérique et Sciences Informatiques",
         cardFormationDiploma2: "Architecte en Technologies du Numérique",
         cardFormationDate1: "2022 - actuellement",
         cardSkillTitle: "Compétences",
@@ -27,15 +27,15 @@ const translations = {
         projectsCard1Title: "Minishell",
         projectsCard1Description: "Reproduction d'un terminal bash, incluant redirections, pipes, built-ins, exécution de binaire, et signaux.",
         projectsCard2Title: "Ft_irc",
-        projectsCard2Description: "Reproduction d'un serveur irc. Ou les operations entrées/sorties doivent être non bloquantes.",
+        projectsCard2Description: "Reproduction d'un serveur irc. Où les operations entrées/sorties doivent être non bloquantes.",
         projectsCard3Title: "Inception",
-        projectsCard3Description: "Initiation a docker, et docker-compose. Le but etait de faire marcher trois containeurs ensembles, nginx, mariaDB, wordpress.",
+        projectsCard3Description: "Initiation à docker, et docker-compose. Le but était de faire marcher trois containeurs ensembles, nginx, mariaDB, wordpress.",
         projectsCard4Title: "Transcendence",
-        projectsCard4Description: "Creation d'un site internet, en single-page application. Multijoueur en temps reel, chat, database, et gestion d'utilisateurs.",
+        projectsCard4Description: "Création d'un site internet, en application monopage. Multijoueur en temps réel, chat, database, et gestion d'utilisateurs.",
 
     },
     en: {
-        profession: "Fullstack Developper Junior",
+        profession: "Fullstack Developer Junior",
         headerPresentation: "Passionate about computers since I was a kid, I naturally turned to development. Joining 42 school, i was able to deepen my knowledge throught various projects. I’m now ready to invest my knowledge in the working world.",
         cardFormationTitle: "Educations",
         cardFormationSchool1: "High school Clément Marot | Cahors",
@@ -60,7 +60,7 @@ const translations = {
         cardAboutLi6: "Cooking",
         sectionProjectsTitle: "My projects",
         projectsCard1Title: "Minishell",
-        projectsCard1Description: "Reproduction of an bash terminal. We had to implemente commands executions, pipes, signals, redirections, and our own commands.",
+        projectsCard1Description: "Reproduction of an bash terminal. We had to implement commands executions, pipes, signals, redirections, and our own commands.",
         projectsCard2Title: "Ft_irc",
         projectsCard2Description: "Reproduction of an irc server with a bot. Where the input/output must be non-blocking.",
         projectsCard3Title: "Inception",
@@ -75,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function myStopPropagation(event){
-   // event.preventDefault();
     event.stopPropagation();
 }
 
