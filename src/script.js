@@ -60,7 +60,7 @@ const translations = {
         cardAboutLi6: "Cooking",
         sectionProjectsTitle: "My projects",
         projectsCard1Title: "Minishell",
-        projectsCard1Description: "Reproduction of an bash terminal. We had to implement commands executions, pipes, signals, redirections, and our own commands.",
+        projectsCard1Description: "Reproduction of an bash terminal. We had to implement command execution, pipes, signals, redirections, and our own commands.",
         projectsCard2Title: "Ft_irc",
         projectsCard2Description: "Reproduction of an irc server with a bot. Where the input/output must be non-blocking.",
         projectsCard3Title: "Inception",
