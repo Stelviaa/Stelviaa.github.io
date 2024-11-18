@@ -25,18 +25,18 @@ const translations = {
         cardAboutLi6: "Cuisine",
         sectionProjectsTitle: "Mes projets",
         projectsCard1Title: "Minishell",
-        projectsCard1Description: "Reproduction d'un terminal bash, incluant redirections, pipes, built-ins, exécution de binaire, et signaux.",
+        projectsCard1Description: "Reproduction d'un terminal bash, incluant redirections, pipes, built-ins, exécution de binaire et signaux.",
         projectsCard2Title: "Ft_irc",
-        projectsCard2Description: "Reproduction d'un serveur irc. Où les operations entrées/sorties doivent être non bloquantes.",
+        projectsCard2Description: "Reproduction d'un serveur irc. Où les opérations entrées/sorties doivent être non bloquantes.",
         projectsCard3Title: "Inception",
-        projectsCard3Description: "Initiation à docker, et docker-compose. Le but était de faire marcher trois containeurs ensembles, nginx, mariaDB, wordpress.",
+        projectsCard3Description: "Initiation à docker, et Docker-compose. Le but était de faire marcher trois conteneurs ensemble, Nginx, MariaDB, WordPress.",
         projectsCard4Title: "Transcendence",
         projectsCard4Description: "Création d'un site internet, en application monopage. Multijoueur en temps réel, chat, database, et gestion d'utilisateurs.",
 
     },
     en: {
         profession: "Fullstack Developer Junior",
-        headerPresentation: "Passionate about computers since I was a kid, I naturally turned to development. Joining 42 school, i was able to deepen my knowledge throught various projects. I’m now ready to invest my knowledge in the working world.",
+        headerPresentation: "Passionate about computers since I was a kid, I naturally turned to development. Joining 42 school, I was able to deepen my knowledge through various projects. I’m now ready to invest my knowledge in the working world.",
         cardFormationTitle: "Educations",
         cardFormationSchool1: "High school Clément Marot | Cahors",
         cardFormationSchool2: "School 42 | Nice",
@@ -66,7 +66,7 @@ const translations = {
         projectsCard3Title: "Inception",
         projectsCard3Description: "Project to learn Docker. My goal was to make communicate the following containers: Nginx, Wordpress, and Mariadb with my own images.",
         projectsCard4Title: "Transcendence",
-        projectsCard4Description: "Creating a website, in single-page-application. It must offer a tounament, a matchmaking system, a user experience and a chat.",
+        projectsCard4Description: "Creating a website, in single-page-application. It must offer a tournament, a matchmaking system, a user experience and a chat.",
     }
 };
 
