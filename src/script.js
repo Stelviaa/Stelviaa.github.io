@@ -1,6 +1,6 @@
 const translations = {
     fr: {
-        profession: "Fullstack Développeur Junior",
+        profession: "Développeur Frontend Junior Développeur Logiciel Junior",
         headerPresentation: "Passionné par l’informatique depuis tout petit, je me suis naturellement tourné vers le développement. En intégrant l’école 42, j’ai pu approfondir mes connaissances à travers divers projets. Je suis maintenant prêt à les investir dans le monde actif.",
         cardFormationTitle: "Formations",
         cardFormationSchool1: "Lycée Clément Marot | Cahors",
@@ -35,7 +35,7 @@ const translations = {
 
     },
     en: {
-        profession: "Fullstack Developer Junior",
+        profession: "Junior Frontend Developer Junior Software Engineer",
         headerPresentation: "Passionate about computers since I was a kid, I naturally turned to development. Joining 42 school, I was able to deepen my knowledge through various projects. I’m now ready to invest my knowledge in the working world.",
         cardFormationTitle: "Educations",
         cardFormationSchool1: "High school Clément Marot | Cahors",
@@ -71,7 +71,7 @@ const translations = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    setLanguage('fr');
+    setLanguage('en');
 });
 
 function myStopPropagation(event){
