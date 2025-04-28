@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
@@ -48,13 +47,22 @@ header {
     margin-top : 20px;
     width: 100%;
     gap: 8px;
+    max-height: 400px;
 }
 
 .card {
     border : solid 2px;
     background-color: #FFFEEB;
     border-radius: 5px;
+    max-height:84%;
 }
+
+.second-card {
+    border : solid 2px;
+    background-color: #FFFEEB;
+    border-radius: 5px;
+}
+
 
 .card__p--title{
     margin: 10px 0 10px 0;
@@ -277,6 +285,13 @@ header {
     justify-self: end;
     margin: 1px;
     border-radius: 4px;
+}
+
+#cardSkills {
+    max-height: 47%;
+    overflow-y: auto;
+    padding-right: 0;
+    margin-right: 0;
 }
 
 .d-flex {
